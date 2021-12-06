@@ -40,9 +40,9 @@ body
             font-family: 'Rubik', sans-serif
             font-weight: 700
             text-decoration: none
-            background-color: #ededed
             display: inline-block
             position: relative
+            padding: 0 10px
             &::before
                 content: ''
                 height: 20px
@@ -50,7 +50,7 @@ body
                 position: absolute
                 top: 0
                 left: 0
-                background-color: red
+
             &::after
                 content: ''
                 height: 20px
@@ -58,13 +58,31 @@ body
                 position: absolute
                 bottom: 0
                 right: 0
-                background-color: red
 
     & .nav
-        background-color: #ededed
         list-style: none
         margin: 80px 0
+        padding: 0
+        & li
+            display: block
+            & a
+                font-size: 26px
+                font-weight: 600
+                color: #302e4d
+                text-decoration: none
+                line-height: 70px
+                display: block
+                border-bottom: 1px solid #e8dfec
+                -webkit-transition: all 0.3s ease
+                transition: all 0.3s ease
+                & .fa
+                    margin-right: 10px
+            &:not(.active):hover
+                padding-left: 5px
+
     & .copyright-text
         background-color: #ededed
+        font-size: 13px
+        color: #7d7d7d
 
 // Home 25.26
