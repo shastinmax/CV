@@ -1,1 +1,103 @@
-h1{color:red}
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
+/* line 4, ../CV/sass/style.sass */
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* line 10, ../CV/sass/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* line 16, ../CV/sass/style.sass */
+::before, ::after {
+  box-sizing: border-box;
+}
+
+/* line 18, ../CV/sass/style.sass */
+.section {
+  background-color: #f2f2fc;
+  min-height: 100vh;
+  display: block;
+}
+
+/* line 22, ../CV/sass/style.sass */
+.main-content {
+  padding-left: 270px;
+}
+
+/* line 25, ../CV/sass/style.sass */
+.aside {
+  width: 270px;
+  background-color: #fdf9ff;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-right: 1px solid #e8dfec;
+  padding: 30px;
+}
+
+/* line 35, ../CV/sass/style.sass */
+.aside .logo {
+  padding: 30px 0;
+}
+
+/* line 37, ../CV/sass/style.sass */
+.aside .logo a {
+  font-size: 40px;
+  color: #302e43;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #ededed;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 46, ../CV/sass/style.sass */
+.aside .logo a::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+/* line 54, ../CV/sass/style.sass */
+.aside .logo a::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+}
+
+/* line 63, ../CV/sass/style.sass */
+.aside .nav {
+  background-color: #ededed;
+  list-style: none;
+  margin: 80px 0;
+}
+
+/* line 67, ../CV/sass/style.sass */
+.aside .copyright-text {
+  background-color: #ededed;
+}
+
+/*# sourceMappingURL=style.css.map */
