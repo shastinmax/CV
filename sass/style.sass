@@ -19,8 +19,17 @@ body
     background-color: #f2f2fc
     min-height: 100vh
     display: block
+    padding: 0 30px
 .main-content
     padding-left: 270px
+
+.container
+    max-width: 1170px
+    width: 100%
+    margin: auto
+.shoadow-dark
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15)
+    box-shadow: 0 0 20px rgba(48,46,77,0.15)
 // Aside
 .aside
     width: 270px
@@ -112,6 +121,7 @@ body
                 border-bottom: 1px solid #e8dfec
                 -webkit-transition: all 0.3s ease
                 transition: all 0.3s ease
+                text-transform: capitalize
                 & .fa
                     margin-right: 10px
             &:not(.active):hover
@@ -122,4 +132,29 @@ body
         font-size: 13px
         color: #7d7d7d
 
-// Home 31.30
+// Home 43
+
+.home
+    min-height: 100vh
+    display: -ms-flexbox
+    display: flex
+    .intro
+        text-align: center
+        img
+            height: 200px
+            width: 200px
+            border-radius: 50%
+            display: inline-block
+            border: 8px solid #ffffff
+        h1
+            font-size: 30px
+            color: #302e43
+            font-family: 'Rubik', sans-serif
+            font-weight: 700
+            margin: 20px 0 5px
+        p
+            font-size: 16px
+            font-weight: 500
+            margin: 0
+            line-height: 22px
+            color: #504e70
