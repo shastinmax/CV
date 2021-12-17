@@ -253,7 +253,6 @@ body
             max-width: 60%
             margin-top: 40px
             & .info-item
-
                 -ms-flex: 0 0 50%
                 flex: 0 0 50%
                 max-width: 50%
@@ -295,7 +294,33 @@ body
                 -ms-flex: 0 0 100%
                 flex: 0 0 100%
                 max-width: 100%
-                h5
+                margin-bottom: 30px
 
+                h5
+                    line-height: 40px
+                    font-weight: 600
+                    font-size: 16px
+                    color: #302e43
+                    text-transform: capitalize
+                    margin: 0
                 & .progress
                     background-color: #e3e3e3
+                    height: 8px
+                    border-radius: 4px
+                    width: 100%
+                    position: relative
+                    & .progress-in
+                        position: absolute
+                        left: 0
+                        top: 0
+                        height: 100%
+                        border-radius: 4px
+
+                & .skill-percent
+                    // display: none 46.32
+                    line-height: 40px
+                    position: absolute
+                    right: 0
+                    top: -40px
+                    font-weight: 400
+                    color: #302e43
