@@ -11,6 +11,7 @@
 .aside .nav li a.active {
   color: #ec1839;
 }
+.btn,
 .section-title h2::after,
 .section-title h2::before,
 .aside .nav-toggler span,
