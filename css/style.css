@@ -350,13 +350,52 @@ body {
 }
 
 /* line 245, ../CV/sass/style.sass */
-.about .about-content .about-text {
+.about .about-content .timeline-box {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
 /* line 249, ../CV/sass/style.sass */
+.about .about-content .timeline {
+  background-color: #fdf9ff;
+  padding: 30px 15px;
+  border: 1px solid #d4d4e3;
+  border-radius: 10px;
+}
+
+/* line 256, ../CV/sass/style.sass */
+.about .about-content h3.title {
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #302e4d;
+}
+
+/* line 262, ../CV/sass/style.sass */
+.about .about-content .education {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+/* line 267, ../CV/sass/style.sass */
+.about .about-content .experience {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+/* line 272, ../CV/sass/style.sass */
+.about .about-content .about-text {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* line 276, ../CV/sass/style.sass */
 .about .about-content .personal-info {
   -ms-flex: 0 0 60%;
   flex: 0 0 60%;
@@ -364,14 +403,14 @@ body {
   margin-top: 40px;
 }
 
-/* line 255, ../CV/sass/style.sass */
+/* line 282, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-/* line 259, ../CV/sass/style.sass */
+/* line 286, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item p {
   font-weight: 600;
   font-size: 16px;
@@ -381,7 +420,7 @@ body {
   border-bottom: 1px solid #e8dfec;
 }
 
-/* line 266, ../CV/sass/style.sass */
+/* line 293, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
   color: #504e70;
@@ -389,18 +428,18 @@ body {
   display: inline-block;
 }
 
-/* line 271, ../CV/sass/style.sass */
+/* line 298, ../CV/sass/style.sass */
 .about .about-content .buttons {
   margin-top: 30px;
 }
 
-/* line 273, ../CV/sass/style.sass */
+/* line 300, ../CV/sass/style.sass */
 .about .about-content .buttons .btn {
   margin-right: 15px;
   margin-top: 10px;
 }
 
-/* line 277, ../CV/sass/style.sass */
+/* line 304, ../CV/sass/style.sass */
 .about .about-content .skills {
   -ms-flex: 0 0 40%;
   flex: 0 0 40%;
@@ -408,7 +447,7 @@ body {
   margin-top: 40px;
 }
 
-/* line 283, ../CV/sass/style.sass */
+/* line 310, ../CV/sass/style.sass */
 .about .about-content .skills h3 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -416,7 +455,7 @@ body {
   color: #302e4d;
 }
 
-/* line 288, ../CV/sass/style.sass */
+/* line 315, ../CV/sass/style.sass */
 .about .about-content .skills p {
   font-size: 16px;
   line-height: 25px;
@@ -424,7 +463,7 @@ body {
   margin: 0;
 }
 
-/* line 293, ../CV/sass/style.sass */
+/* line 320, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -432,7 +471,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* line 299, ../CV/sass/style.sass */
+/* line 326, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item h5 {
   line-height: 40px;
   font-weight: 600;
@@ -442,16 +481,16 @@ body {
   margin: 0;
 }
 
-/* line 306, ../CV/sass/style.sass */
+/* line 333, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .progress {
   background-color: #e3e3e3;
-  height: 8px;
+  height: 7px;
   border-radius: 4px;
   width: 100%;
   position: relative;
 }
 
-/* line 312, ../CV/sass/style.sass */
+/* line 339, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .progress .progress-in {
   position: absolute;
   left: 0;
@@ -460,7 +499,7 @@ body {
   border-radius: 4px;
 }
 
-/* line 319, ../CV/sass/style.sass */
+/* line 346, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .skill-percent {
   line-height: 40px;
   position: absolute;
