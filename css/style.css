@@ -574,4 +574,48 @@ body {
   color: #302e43;
 }
 
+/* line 399, ../CV/sass/style.sass */
+.portfolio .portfolio-item-inner .portfolio-img img {
+  width: 100%;
+  display: block;
+}
+
+/* line 403, ../CV/sass/style.sass */
+.portfolio .portfolio-filter {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* line 410, ../CV/sass/style.sass */
+.portfolio .portfolio-filter button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0 50px;
+  color: #302e43;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 424, ../CV/sass/style.sass */
+.portfolio .portfolio-item {
+  background-color: red;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+/* line 428, ../CV/sass/style.sass */
+.portfolio .portfolio-item .portfolio-info {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
