@@ -246,21 +246,53 @@ body
             -ms-flex: 0 0 100%
             flex: 0 0 100%
             max-width: 100%
+
         & .timeline
             background-color: #fdf9ff
             padding: 30px 15px
             border: 1px solid #d4d4e3
             border-radius: 10px
             width: 100%
-            & .timeline-circle-dot
+            position: relative
+            & .timeline-item
+                position: relative
+                padding-left: 37px
+                padding-bottom: 50px
+                &:last-child
+                    padding-bottom: 0
+            & .timeline-item::before
+                content: ''
+                width: 1px
+                height: 100%
+                position: absolute
+                left: 7px
+                top: 0
+            & .circle-dot
+                position: absolute
+                left: 0
+                top: 0
+                height: 15px
+                width: 15px
+                left: 0
+                border-radius: 50px
             & .timeline-date
-
+                font-weight: 400
+                font-size: 14px
+                margin-bottom: 12px
+                color: #504e70
+                & .fa
+                    margin-right: 5px
             & .timeline-title
                 font-weight: 700
                 font-size: 18px
                 margin-bottom: 15px
                 text-transform: capitalize
+                color: #302e43
             & .timeline-text
+                line-height: 25px
+                font-size: 16px
+                margin: 0
+                color: #504e70
 
         & h3
             &.title

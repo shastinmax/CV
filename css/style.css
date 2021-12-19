@@ -356,24 +356,80 @@ body {
   max-width: 100%;
 }
 
-/* line 249, ../CV/sass/style.sass */
+/* line 250, ../CV/sass/style.sass */
 .about .about-content .timeline {
   background-color: #fdf9ff;
   padding: 30px 15px;
   border: 1px solid #d4d4e3;
   border-radius: 10px;
   width: 100%;
+  position: relative;
 }
 
-/* line 258, ../CV/sass/style.sass */
+/* line 257, ../CV/sass/style.sass */
+.about .about-content .timeline .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+/* line 261, ../CV/sass/style.sass */
+.about .about-content .timeline .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* line 263, ../CV/sass/style.sass */
+.about .about-content .timeline .timeline-item::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 7px;
+  top: 0;
+}
+
+/* line 270, ../CV/sass/style.sass */
+.about .about-content .timeline .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  left: 0;
+  border-radius: 50px;
+}
+
+/* line 278, ../CV/sass/style.sass */
+.about .about-content .timeline .timeline-date {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #504e70;
+}
+
+/* line 283, ../CV/sass/style.sass */
+.about .about-content .timeline .timeline-date .fa {
+  margin-right: 5px;
+}
+
+/* line 285, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-title {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
+  color: #302e43;
 }
 
-/* line 266, ../CV/sass/style.sass */
+/* line 291, ../CV/sass/style.sass */
+.about .about-content .timeline .timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  margin: 0;
+  color: #504e70;
+}
+
+/* line 298, ../CV/sass/style.sass */
 .about .about-content h3.title {
   font-size: 24px;
   margin-bottom: 30px;
@@ -381,7 +437,7 @@ body {
   color: #302e4d;
 }
 
-/* line 272, ../CV/sass/style.sass */
+/* line 304, ../CV/sass/style.sass */
 .about .about-content .education {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -389,7 +445,7 @@ body {
   margin-top: 30px;
 }
 
-/* line 277, ../CV/sass/style.sass */
+/* line 309, ../CV/sass/style.sass */
 .about .about-content .experience {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -397,14 +453,14 @@ body {
   margin-top: 30px;
 }
 
-/* line 282, ../CV/sass/style.sass */
+/* line 314, ../CV/sass/style.sass */
 .about .about-content .about-text {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 286, ../CV/sass/style.sass */
+/* line 318, ../CV/sass/style.sass */
 .about .about-content .personal-info {
   -ms-flex: 0 0 60%;
   flex: 0 0 60%;
@@ -412,14 +468,14 @@ body {
   margin-top: 40px;
 }
 
-/* line 292, ../CV/sass/style.sass */
+/* line 324, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-/* line 296, ../CV/sass/style.sass */
+/* line 328, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item p {
   font-weight: 600;
   font-size: 16px;
@@ -429,7 +485,7 @@ body {
   border-bottom: 1px solid #e8dfec;
 }
 
-/* line 303, ../CV/sass/style.sass */
+/* line 335, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
   color: #504e70;
@@ -437,18 +493,18 @@ body {
   display: inline-block;
 }
 
-/* line 308, ../CV/sass/style.sass */
+/* line 340, ../CV/sass/style.sass */
 .about .about-content .buttons {
   margin-top: 30px;
 }
 
-/* line 310, ../CV/sass/style.sass */
+/* line 342, ../CV/sass/style.sass */
 .about .about-content .buttons .btn {
   margin-right: 15px;
   margin-top: 10px;
 }
 
-/* line 314, ../CV/sass/style.sass */
+/* line 346, ../CV/sass/style.sass */
 .about .about-content .skills {
   -ms-flex: 0 0 40%;
   flex: 0 0 40%;
@@ -456,7 +512,7 @@ body {
   margin-top: 40px;
 }
 
-/* line 320, ../CV/sass/style.sass */
+/* line 352, ../CV/sass/style.sass */
 .about .about-content .skills h3 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -464,7 +520,7 @@ body {
   color: #302e4d;
 }
 
-/* line 325, ../CV/sass/style.sass */
+/* line 357, ../CV/sass/style.sass */
 .about .about-content .skills p {
   font-size: 16px;
   line-height: 25px;
@@ -472,7 +528,7 @@ body {
   margin: 0;
 }
 
-/* line 330, ../CV/sass/style.sass */
+/* line 362, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -480,7 +536,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* line 336, ../CV/sass/style.sass */
+/* line 368, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item h5 {
   line-height: 40px;
   font-weight: 600;
@@ -490,7 +546,7 @@ body {
   margin: 0;
 }
 
-/* line 343, ../CV/sass/style.sass */
+/* line 375, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .progress {
   background-color: #e3e3e3;
   height: 7px;
@@ -499,7 +555,7 @@ body {
   position: relative;
 }
 
-/* line 349, ../CV/sass/style.sass */
+/* line 381, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .progress .progress-in {
   position: absolute;
   left: 0;
@@ -508,7 +564,7 @@ body {
   border-radius: 4px;
 }
 
-/* line 356, ../CV/sass/style.sass */
+/* line 388, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .skill-percent {
   line-height: 40px;
   position: absolute;
