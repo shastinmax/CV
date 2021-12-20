@@ -395,11 +395,27 @@ body
                     color: #302e43
     // portfolio Section
 .portfolio
+    & .container
+        padding-bottom: 40px
     & .portfolio-item-inner
+        border: 6px solid #fdf9ff
+        border-radius: 10px
+        overflow: hidden
+        cursor: pointer
+        position: relative
+        &:hover .portfolio-info .icon
+            opacity: 1
+            -webkit-transform: translateX(0px)
+            transform: translateX(0px)
+        &:hover .portfolio-info h4
+            opacity: 1
+            -webkit-transform: translateX(0px)
+            transform: translateX(0px)
+        &:hover .portfolio-info
+            opacity: 1
         & .portfolio-img img
             width: 100%
             display: block
-
     & .portfolio-filter
         // background-color: red 20.13
         -ms-flex: 0 0 100%
@@ -422,8 +438,44 @@ body
             -webkit-transition: all 0.3s ease
             transition: all 0.3s ease
     & .portfolio-item
-        background-color: red
+        margin-bottom: 30px
         flex: 0 0 33.33%
         max-width: 33.33%
         & .portfolio-info
-            display: none
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            width: 100%
+            background-color: rgba(0,0,0,0.6 )
+            z-index: 1
+            padding: 30px
+            -webkit-transition: all 0.3s ease
+            transition: all 0.3s ease
+            opacity: 0
+            & h4
+                font-size: 18px
+                font-weight: 700
+                color: #ffffff
+                text-transform: capitalize
+                -webkit-transition: all 0.3s ease
+                transition: all 0.3s ease
+                -webkit-transform: translateX(-20px)
+                transform: translateX(-20px)
+                opacity: 0
+            & .icon
+                width: 40px
+                height: 40px
+                background-color: #ffffff
+                text-align: center
+                border-radius: 50%
+                position: absolute
+                right: 30px
+                bottom: 30px
+                -webkit-transition: all 0.3s ease
+                transition: all 0.3s ease
+                -webkit-transform: translateX(20px)
+                transform: translateX(20px)
+                opacity: 0
+                & .fa
+                    line-height: 40px
