@@ -43,7 +43,7 @@
       <!-- Main Content -->
       <div class="main-content">
         <!-- Home Section -->
-        <section class="home section hidden">
+        <section class="home section">
           <div class="container">
             <div class="intro">
               <img class="shoadow-dark" src="./images/1_.jpg" alt="profile" />
@@ -60,7 +60,7 @@
         </section>
         <!-- Home Section End -->
         <!-- About section -->
-        <section class="about section hidden">
+        <section class="about section">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -336,7 +336,9 @@
     <!-- Lightbox -->
     <div class="lightbox">
       <div class="lightbox-content">
-        <div class="lightbox-close"><i class="fa fa-close"></i></div>
+        <div class="lightbox-close" onClick="toggleLightBox()">
+          <i class="fa fa-close"></i>
+        </div>
         <img
           src="./images/portfolio/Безымянный.jpg"
           alt="image"

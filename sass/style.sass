@@ -548,10 +548,9 @@ body
 
         & .lightbox-close
             position: absolute
-            height: 40px
-            width: 40px
-            // background-color: red
-            top: -40px
+            height: 40
+            width: 40
+            top: 0
             right: 0
             font-size: 16px
             color: #ffffff
@@ -560,19 +559,22 @@ body
         & img
             height: auto
             width: auto
-            max-height: 430px
+            max-width: 100%
+            max-height: 500px
             cursor: pointer
+            display: block
+            padding: 40px 0 30px
         & .lightbox-caption
             position: absolute
-            bottom: -22px
+            bottom: 0
             width: 100%
             left: 0
             display: flex
-            // background-color: rgba(0,0,0,0.5)
             justify-content: space-between
             font-size: 16px
             font-weight: 400
             color: #ffffff
+            z-index: -1
 @keyframes lightboxImage
     0%
         transform: scale(0.8)

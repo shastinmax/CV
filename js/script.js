@@ -2,6 +2,7 @@
 
 // portfolio item filter
 const filterContainer=document.querySelector('.portfolio-filter'),
+lightboxClose=document.querySelector('.lightbox-close'),
 filterBtns=filterContainer.children,
 totalFilterBtn=filterBtns.length
 portfolioItems=document.querySelectorAll('.portfolio-item')
@@ -68,3 +69,8 @@ function changeItem(){
 }
 
 // close lightbox
+lightbox.addEventListener('click',function(event){
+if(event.target===lightboxClose || event.target===lightbox){
+    toggleLightBox()
+}
+})
