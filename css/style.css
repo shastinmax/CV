@@ -647,6 +647,17 @@ body {
 }
 
 /* line 444, ../CV/sass/style.sass */
+.portfolio .portfolio-item.hide {
+  display: none;
+}
+
+/* line 446, ../CV/sass/style.sass */
+.portfolio .portfolio-item.show {
+  display: block;
+  animation: showItem 0.5s ease;
+}
+
+/* line 449, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info {
   position: absolute;
   left: 0;
@@ -661,7 +672,7 @@ body {
   opacity: 0;
 }
 
-/* line 456, ../CV/sass/style.sass */
+/* line 461, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   font-weight: 700;
@@ -674,7 +685,7 @@ body {
   opacity: 0;
 }
 
-/* line 466, ../CV/sass/style.sass */
+/* line 471, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info .icon {
   width: 40px;
   height: 40px;
@@ -691,12 +702,12 @@ body {
   opacity: 0;
 }
 
-/* line 480, ../CV/sass/style.sass */
+/* line 485, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info .icon .fa {
   line-height: 40px;
 }
 
-/* line 485, ../CV/sass/style.sass */
+/* line 490, ../CV/sass/style.sass */
 .lightbox {
   position: fixed;
   left: 0;
@@ -712,17 +723,17 @@ body {
   padding: 30px;
 }
 
-/* line 498, ../CV/sass/style.sass */
+/* line 503, ../CV/sass/style.sass */
 .lightbox.open {
   display: flex;
 }
 
-/* line 500, ../CV/sass/style.sass */
+/* line 505, ../CV/sass/style.sass */
 .lightbox.open .lightbox-content {
   animation: lightboxImage .5s ease;
 }
 
-/* line 504, ../CV/sass/style.sass */
+/* line 509, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item {
   position: absolute;
   height: 40px;
@@ -738,18 +749,18 @@ body {
   left: 30px;
 }
 
-/* line 517, ../CV/sass/style.sass */
+/* line 522, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item:hover {
   transform: scale(1.2);
 }
 
-/* line 519, ../CV/sass/style.sass */
+/* line 524, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 522, ../CV/sass/style.sass */
+/* line 527, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item {
   position: absolute;
   height: 40px;
@@ -765,23 +776,23 @@ body {
   right: 30px;
 }
 
-/* line 535, ../CV/sass/style.sass */
+/* line 540, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item:hover {
   transform: scale(1.2);
 }
 
-/* line 537, ../CV/sass/style.sass */
+/* line 542, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 541, ../CV/sass/style.sass */
+/* line 546, ../CV/sass/style.sass */
 .lightbox .lightbox-content {
   position: relative;
 }
 
-/* line 544, ../CV/sass/style.sass */
+/* line 549, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-close {
   position: absolute;
   height: 40px;
@@ -794,7 +805,7 @@ body {
   line-height: 40px;
 }
 
-/* line 555, ../CV/sass/style.sass */
+/* line 560, ../CV/sass/style.sass */
 .lightbox .lightbox-content img {
   height: auto;
   width: auto;
@@ -802,7 +813,7 @@ body {
   cursor: pointer;
 }
 
-/* line 560, ../CV/sass/style.sass */
+/* line 565, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-caption {
   position: absolute;
   bottom: -22px;
@@ -821,6 +832,17 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes showItem {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
