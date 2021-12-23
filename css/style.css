@@ -705,15 +705,24 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   cursor: zoom-out;
   padding: 30px;
 }
 
+/* line 498, ../CV/sass/style.sass */
+.lightbox.open {
+  display: flex;
+}
+
 /* line 500, ../CV/sass/style.sass */
+.lightbox.open .lightbox-content {
+  animation: lightboxImage .5s ease;
+}
+
+/* line 504, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item {
   position: absolute;
   height: 40px;
@@ -729,18 +738,18 @@ body {
   left: 30px;
 }
 
-/* line 513, ../CV/sass/style.sass */
+/* line 517, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item:hover {
   transform: scale(1.2);
 }
 
-/* line 515, ../CV/sass/style.sass */
+/* line 519, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 518, ../CV/sass/style.sass */
+/* line 522, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item {
   position: absolute;
   height: 40px;
@@ -756,23 +765,23 @@ body {
   right: 30px;
 }
 
-/* line 531, ../CV/sass/style.sass */
+/* line 535, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item:hover {
   transform: scale(1.2);
 }
 
-/* line 533, ../CV/sass/style.sass */
+/* line 537, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 537, ../CV/sass/style.sass */
+/* line 541, ../CV/sass/style.sass */
 .lightbox .lightbox-content {
   position: relative;
 }
 
-/* line 539, ../CV/sass/style.sass */
+/* line 544, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-close {
   position: absolute;
   height: 40px;
@@ -785,7 +794,7 @@ body {
   line-height: 40px;
 }
 
-/* line 550, ../CV/sass/style.sass */
+/* line 555, ../CV/sass/style.sass */
 .lightbox .lightbox-content img {
   height: auto;
   width: auto;
@@ -793,7 +802,7 @@ body {
   cursor: pointer;
 }
 
-/* line 555, ../CV/sass/style.sass */
+/* line 560, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-caption {
   position: absolute;
   bottom: -22px;
@@ -804,6 +813,15 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
+}
+
+@keyframes lightboxImage {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
