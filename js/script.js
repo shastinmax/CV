@@ -28,3 +28,43 @@ filterBtns[i].addEventListener('click',function(){
     }
 })
 }
+
+// portfolio lightbox
+
+const lightbox=document.querySelector('.lightbox'),
+lightboxImg=lightbox.querySelector('.lightbox-img'),
+lightboxText=lightbox.querySelector('.caption-text'),
+lightboxCounter=lightbox.querySelector('.caption-counter')
+
+let itemIndex=0
+
+for(let i=0;i<totalPortfolioItem;i++){
+    portfolioItems[i].addEventListener('click',function(){
+        itemIndex=i
+        changeItem()
+        toggleLightBox()
+    })
+}
+
+function nextItem(){
+    itemIndex===totalPortfolioItem - 1 ? itemIndex = 0 : itemIndex++
+    changeItem()  
+}
+
+function prevItem(){
+    itemIndex===0 ? itemIndex=totalPortfolioItem - 1 : itemIndex--
+    changeItem()  
+}
+
+function toggleLightBox(){
+    lightbox.classList.toggle('open')
+}
+
+function changeItem(){
+    imgSrc=portfolioItems[itemIndex].querySelector('.portfolio-img img').getAttribute('src')
+    lightboxImg.src=imgSrc
+    lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("h4").innerHTML
+    lightboxCounter.innerHTML=(itemIndex+1) + " of " + totalPortfolioItem
+}
+
+// close lightbox
