@@ -15,6 +15,11 @@ body
     box-sizing: border-box
 ::before,::after
     box-sizing: border-box
+input,
+textarea,
+select
+    font-family: 'Montserrat', sans-serif
+
 .section
     background-color: #f2f2fc
     min-height: 100vh
@@ -85,6 +90,8 @@ body
     transition: all 0.3s ease
     display: inline-block
     white-space: nowrap
+    border: none
+    cursor: pointer
     &:hover
         -webkit-transform: scale(1.05)
         transform: scale(1.05)
@@ -587,3 +594,58 @@ body
     100%
         transform: scale(1)
         opacity: 1
+
+// Contact
+
+.contact
+    & .contact-form
+        flex: 0 0 100%
+        max-width: 100%
+        & .btn
+            height: 50px
+            padding: 0 50px
+        & .col-6
+            flex: 0 0 50%
+            max-width: 50%
+            // background-color: red
+        & .col-12
+            // background-color: red
+            flex: 0 0 100%
+            max-width: 100%
+        & .form-item
+            margin-bottom: 30px
+            & textarea.form-control
+                height: 140px
+            & .form-control
+                width: 100%
+                height: 50px
+                border-radius: 25px
+                border: 1px solid #d4d4e3
+                padding: 10px 25px
+                font-size: 16px
+                color: #504e70
+                transition: all 0.3s ease
+                &:focus
+                    box-shadow: 0 0 20px rgba(48,46,77,0.15)
+    & .contact-info-item
+        flex: 0 50%
+        max-width: 50%
+        text-align: center
+        margin-bottom: 40px
+        & .icon
+            display: inline-block
+            & .fa
+                font-size: 40px
+        & h4
+            font-size: 18px
+            font-weight: 700
+            color: #302e4d
+            text-transform: capitalize
+            margin: 15px 0 5px
+
+        & p
+            font-size: 16px
+            line-height: 25px
+            color: #504e70
+            margin: 0
+            font-weight: 400
