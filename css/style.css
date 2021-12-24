@@ -946,4 +946,52 @@ select {
   font-weight: 400;
 }
 
+@media (max-width: 1199px) {
+  /* line 656, ../CV/sass/style.sass */
+  .aside {
+    left: -270px;
+  }
+  /* line 658, ../CV/sass/style.sass */
+  .main-content {
+    padding-left: 0;
+  }
+  /* line 660, ../CV/sass/style.sass */
+  .about .about-content .personal-info .info-item p span {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 664, ../CV/sass/style.sass */
+  .portfolio .portfolio-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 668, ../CV/sass/style.sass */
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 674, ../CV/sass/style.sass */
+  .portfolio .portfolio-filter button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 677, ../CV/sass/style.sass */
+  .contact .contact-info-item,
+  .portfolio .portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
