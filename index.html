@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" class="alternative-style" title='pink' href="css/skins/pink.css" type="text/css" disabled/>
+    <link rel="stylesheet" class="alternative-style" title='pink' href="css/skins/pink.css" type="text/css" />
     <link rel="stylesheet" class="alternative-style" title='blue' href="css/skins/blue.css" type="text/css" disabled/>
     <link rel="stylesheet" class="alternative-style" title='orange' href="css/skins/orange.css" type="text/css" disabled/>
-    <link rel="stylesheet" class="alternative-style" title='yellow' href="css/skins/yellow.css" type="text/css" />
+    <link rel="stylesheet" class="alternative-style" title='yellow' href="css/skins/yellow.css" type="text/css" disabled/>
     <link rel="stylesheet" class="alternative-style" title='green' href="css/skins/green.css" type="text/css" disabled/>
+  <link rel="stylesheet" href="css/styleSwitcher.css" type = 'text/css'>
   </head>
   <body>
     <!-- Main container -->
@@ -446,6 +447,19 @@
     </div>
     <!-- Lightbox End -->
 
+    <!-- Live style Switcher -->
+
+    <div class="style-switcher">
+      <h5>Style Switcher</h5>
+      <ul>
+        <li><a href="#" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+        <li><a href="#" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a></li>
+        <li><a href="#" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a></li>
+        <li><a href="#" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+        <li><a href="#" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a></li>
+      </ul>
+    </div>
+    <!-- Live style Switcher End -->
     <!-- Template js -->
     <script src="./js/script.js"></script>
   </body>
