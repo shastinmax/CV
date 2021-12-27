@@ -25,6 +25,17 @@ select
     min-height: 100vh
     display: block
     padding: 0 30px
+    position: fixed
+    left: 270px
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 0
+    opacity: 1
+    &.active
+        opacity: 1
+        z-index: 2
+
     .container
         padding-top: 60px
         padding-bottom: 70px
@@ -69,8 +80,6 @@ select
 .padd-15
     padding-right: 15px
     padding-left: 15px
-.main-content
-    padding-left: 270px
 
 .container
     max-width: 1170px
