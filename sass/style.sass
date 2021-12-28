@@ -31,14 +31,24 @@ select
     right: 0
     bottom: 0
     z-index: 0
+    overflow-x: hidden
+    overflow-y: auto
     opacity: 1
+    &.back-section
+        z-index: 1
     &.active
         opacity: 1
         z-index: 2
+        animation: slideSection 1s ease
 
     .container
         padding-top: 60px
         padding-bottom: 70px
+@keyframes slideSection
+    0%
+        transform: translateX(100%)
+    100%
+        transform: translateX(0%)
 
 .section-title
     flex: 0 0 100%
@@ -695,10 +705,12 @@ body.dark .home .intro p
     // Responsive
 
 @media(max-width: 1199px)
-    .aside
-        left: -270px
-    .main-content
-        padding-left: 0
+    .aside .nav-toggler
+        display: flex
+    // .aside
+    //     left: -270px
+    // .main-content
+    //     padding-left: 0
     .about .about-content .personal-info .info-item p span
         display: block
         margin-left: 0
