@@ -34,6 +34,7 @@ select
     overflow-x: hidden
     overflow-y: auto
     opacity: 1
+    transition: all 0.3s ease
     &.back-section
         z-index: 1
     &.active
@@ -127,6 +128,7 @@ select
     z-index: 10
     border-right: 1px solid #e8dfec
     padding: 30px
+    transition: all 0.3s ease
     & .logo
         padding: 30px 0
         & a
@@ -160,7 +162,7 @@ select
         cursor: pointer
         position: fixed
         left: 300px
-        top: 30px
+        top: 20px
         z-index: 11
         border-radius: 5px
         background-color: #fdf9ff
@@ -171,11 +173,20 @@ select
         align-items: center
         -ms-flex-pack: center
         justify-content: center
+        transition: all 0.3s ease
         & span
             height: 2px
             width: 18px
             display: inline-block
             position: relative
+        &.open span
+            background-color: transparent
+            &::before
+                transform: rotate(45deg)
+                top: 0
+            &::after
+                transform: rotate(-45deg)
+                top: 0
         & span::before
             content: ''
             height: 2px
@@ -707,10 +718,18 @@ body.dark .home .intro p
 @media(max-width: 1199px)
     .aside .nav-toggler
         display: flex
-    // .aside
-    //     left: -270px
-    // .main-content
-    //     padding-left: 0
+        left: 30px
+    .aside .nav-toggler.open
+        left: 300px
+    .aside
+        left: -270px
+    .aside.open
+        left: 0px
+    .section
+        left: 0
+    .section.open
+        left: 270px
+
     .about .about-content .personal-info .info-item p span
         display: block
         margin-left: 0
