@@ -117,6 +117,33 @@ select
         transform: scale(1.05)
 .hidden
     display: none!important
+
+// Preloader
+.preloader
+    background-color: #222222
+    position: fixed
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 150
+    & .loader
+        height: 40px
+        width: 40px
+        border: 3px solid #e3e3e3
+        border-radius: 50%
+        border-top: 4px solid transparent
+        border-bottom: 4px solid transparent
+        animation: spin 2s linear infinite
+@keyframes spin
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
 // Aside
 .aside
     width: 270px
@@ -716,6 +743,8 @@ body.dark .home .intro p
     // Responsive
 
 @media(max-width: 1199px)
+    .section .container
+        padding-top: 70px
     .aside .nav-toggler
         display: flex
         left: 30px

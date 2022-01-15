@@ -172,7 +172,41 @@ select {
   display: none !important;
 }
 
-/* line 121, ../CV/sass/style.sass */
+/* line 122, ../CV/sass/style.sass */
+.preloader {
+  background-color: #222222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 150;
+}
+
+/* line 133, ../CV/sass/style.sass */
+.preloader .loader {
+  height: 40px;
+  width: 40px;
+  border: 3px solid #e3e3e3;
+  border-radius: 50%;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 148, ../CV/sass/style.sass */
 .aside {
   width: 270px;
   background-color: #fdf9ff;
@@ -186,12 +220,12 @@ select {
   transition: all 0.3s ease;
 }
 
-/* line 132, ../CV/sass/style.sass */
+/* line 159, ../CV/sass/style.sass */
 .aside .logo {
   padding: 30px 0;
 }
 
-/* line 134, ../CV/sass/style.sass */
+/* line 161, ../CV/sass/style.sass */
 .aside .logo a {
   font-size: 40px;
   color: #302e43;
@@ -203,7 +237,7 @@ select {
   padding: 0 10px;
 }
 
-/* line 143, ../CV/sass/style.sass */
+/* line 170, ../CV/sass/style.sass */
 .aside .logo a::before {
   content: '';
   height: 20px;
@@ -213,7 +247,7 @@ select {
   left: 0;
 }
 
-/* line 151, ../CV/sass/style.sass */
+/* line 178, ../CV/sass/style.sass */
 .aside .logo a::after {
   content: '';
   height: 20px;
@@ -223,7 +257,7 @@ select {
   right: 0;
 }
 
-/* line 158, ../CV/sass/style.sass */
+/* line 185, ../CV/sass/style.sass */
 .aside .nav-toggler {
   height: 40px;
   width: 45px;
@@ -243,7 +277,7 @@ select {
   transition: all 0.3s ease;
 }
 
-/* line 177, ../CV/sass/style.sass */
+/* line 204, ../CV/sass/style.sass */
 .aside .nav-toggler span {
   height: 2px;
   width: 18px;
@@ -251,24 +285,24 @@ select {
   position: relative;
 }
 
-/* line 182, ../CV/sass/style.sass */
+/* line 209, ../CV/sass/style.sass */
 .aside .nav-toggler.open span {
   background-color: transparent;
 }
 
-/* line 184, ../CV/sass/style.sass */
+/* line 211, ../CV/sass/style.sass */
 .aside .nav-toggler.open span::before {
   transform: rotate(45deg);
   top: 0;
 }
 
-/* line 187, ../CV/sass/style.sass */
+/* line 214, ../CV/sass/style.sass */
 .aside .nav-toggler.open span::after {
   transform: rotate(-45deg);
   top: 0;
 }
 
-/* line 190, ../CV/sass/style.sass */
+/* line 217, ../CV/sass/style.sass */
 .aside .nav-toggler span::before {
   content: '';
   height: 2px;
@@ -278,7 +312,7 @@ select {
   left: 0;
 }
 
-/* line 197, ../CV/sass/style.sass */
+/* line 224, ../CV/sass/style.sass */
 .aside .nav-toggler span::after {
   content: '';
   height: 2px;
@@ -288,19 +322,19 @@ select {
   left: 0;
 }
 
-/* line 205, ../CV/sass/style.sass */
+/* line 232, ../CV/sass/style.sass */
 .aside .nav {
   list-style: none;
   margin: 80px 0;
   padding: 0;
 }
 
-/* line 209, ../CV/sass/style.sass */
+/* line 236, ../CV/sass/style.sass */
 .aside .nav li {
   display: block;
 }
 
-/* line 211, ../CV/sass/style.sass */
+/* line 238, ../CV/sass/style.sass */
 .aside .nav li a {
   font-size: 26px;
   font-weight: 600;
@@ -314,36 +348,36 @@ select {
   text-transform: capitalize;
 }
 
-/* line 222, ../CV/sass/style.sass */
+/* line 249, ../CV/sass/style.sass */
 .aside .nav li a .fa {
   margin-right: 10px;
 }
 
-/* line 224, ../CV/sass/style.sass */
+/* line 251, ../CV/sass/style.sass */
 .aside .nav li:not(.active):hover {
   padding-left: 5px;
 }
 
-/* line 227, ../CV/sass/style.sass */
+/* line 254, ../CV/sass/style.sass */
 .aside .copyright-text {
   background-color: #ededed;
   font-size: 13px;
   color: #7d7d7d;
 }
 
-/* line 234, ../CV/sass/style.sass */
+/* line 261, ../CV/sass/style.sass */
 .home {
   min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 238, ../CV/sass/style.sass */
+/* line 265, ../CV/sass/style.sass */
 .home .intro {
   text-align: center;
 }
 
-/* line 240, ../CV/sass/style.sass */
+/* line 267, ../CV/sass/style.sass */
 .home .intro img {
   height: 200px;
   width: 200px;
@@ -352,7 +386,7 @@ select {
   border: 8px solid #ffffff;
 }
 
-/* line 246, ../CV/sass/style.sass */
+/* line 273, ../CV/sass/style.sass */
 .home .intro h1 {
   font-size: 30px;
   color: #302e43;
@@ -361,7 +395,7 @@ select {
   margin: 20px 0 5px;
 }
 
-/* line 252, ../CV/sass/style.sass */
+/* line 279, ../CV/sass/style.sass */
 .home .intro p {
   font-size: 16px;
   font-weight: 500;
@@ -370,12 +404,12 @@ select {
   color: #504e70;
 }
 
-/* line 258, ../CV/sass/style.sass */
+/* line 285, ../CV/sass/style.sass */
 .home .intro .social-links {
   margin-top: 25px;
 }
 
-/* line 260, ../CV/sass/style.sass */
+/* line 287, ../CV/sass/style.sass */
 .home .intro .social-links a {
   height: 35px;
   width: 35px;
@@ -390,27 +424,27 @@ select {
   transition: all 0.3s ease;
 }
 
-/* line 272, ../CV/sass/style.sass */
+/* line 299, ../CV/sass/style.sass */
 .home .intro .social-links a:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* line 278, ../CV/sass/style.sass */
+/* line 305, ../CV/sass/style.sass */
 .about .about-content {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 282, ../CV/sass/style.sass */
+/* line 309, ../CV/sass/style.sass */
 .about .about-content .timeline-box {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 287, ../CV/sass/style.sass */
+/* line 314, ../CV/sass/style.sass */
 .about .about-content .timeline {
   background-color: #fdf9ff;
   padding: 30px 15px;
@@ -420,19 +454,19 @@ select {
   position: relative;
 }
 
-/* line 294, ../CV/sass/style.sass */
+/* line 321, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-item {
   position: relative;
   padding-left: 37px;
   padding-bottom: 50px;
 }
 
-/* line 298, ../CV/sass/style.sass */
+/* line 325, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-item:last-child {
   padding-bottom: 0;
 }
 
-/* line 300, ../CV/sass/style.sass */
+/* line 327, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-item::before {
   content: '';
   width: 1px;
@@ -442,7 +476,7 @@ select {
   top: 0;
 }
 
-/* line 307, ../CV/sass/style.sass */
+/* line 334, ../CV/sass/style.sass */
 .about .about-content .timeline .circle-dot {
   position: absolute;
   left: 0;
@@ -453,7 +487,7 @@ select {
   border-radius: 50px;
 }
 
-/* line 315, ../CV/sass/style.sass */
+/* line 342, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-date {
   font-weight: 400;
   font-size: 14px;
@@ -461,12 +495,12 @@ select {
   color: #504e70;
 }
 
-/* line 320, ../CV/sass/style.sass */
+/* line 347, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-date .fa {
   margin-right: 5px;
 }
 
-/* line 322, ../CV/sass/style.sass */
+/* line 349, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-title {
   font-weight: 700;
   font-size: 18px;
@@ -475,7 +509,7 @@ select {
   color: #302e43;
 }
 
-/* line 328, ../CV/sass/style.sass */
+/* line 355, ../CV/sass/style.sass */
 .about .about-content .timeline .timeline-text {
   line-height: 25px;
   font-size: 16px;
@@ -483,7 +517,7 @@ select {
   color: #504e70;
 }
 
-/* line 335, ../CV/sass/style.sass */
+/* line 362, ../CV/sass/style.sass */
 .about .about-content h3.title {
   font-size: 24px;
   margin-bottom: 30px;
@@ -491,7 +525,7 @@ select {
   color: #302e4d;
 }
 
-/* line 341, ../CV/sass/style.sass */
+/* line 368, ../CV/sass/style.sass */
 .about .about-content .education {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -499,7 +533,7 @@ select {
   margin-top: 30px;
 }
 
-/* line 346, ../CV/sass/style.sass */
+/* line 373, ../CV/sass/style.sass */
 .about .about-content .experience {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -507,14 +541,14 @@ select {
   margin-top: 30px;
 }
 
-/* line 351, ../CV/sass/style.sass */
+/* line 378, ../CV/sass/style.sass */
 .about .about-content .about-text {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 355, ../CV/sass/style.sass */
+/* line 382, ../CV/sass/style.sass */
 .about .about-content .personal-info {
   -ms-flex: 0 0 60%;
   flex: 0 0 60%;
@@ -522,14 +556,14 @@ select {
   margin-top: 40px;
 }
 
-/* line 361, ../CV/sass/style.sass */
+/* line 388, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-/* line 365, ../CV/sass/style.sass */
+/* line 392, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item p {
   font-weight: 600;
   font-size: 16px;
@@ -539,7 +573,7 @@ select {
   border-bottom: 1px solid #e8dfec;
 }
 
-/* line 372, ../CV/sass/style.sass */
+/* line 399, ../CV/sass/style.sass */
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
   color: #504e70;
@@ -547,18 +581,18 @@ select {
   display: inline-block;
 }
 
-/* line 377, ../CV/sass/style.sass */
+/* line 404, ../CV/sass/style.sass */
 .about .about-content .buttons {
   margin-top: 30px;
 }
 
-/* line 379, ../CV/sass/style.sass */
+/* line 406, ../CV/sass/style.sass */
 .about .about-content .buttons .btn {
   margin-right: 15px;
   margin-top: 10px;
 }
 
-/* line 383, ../CV/sass/style.sass */
+/* line 410, ../CV/sass/style.sass */
 .about .about-content .skills {
   -ms-flex: 0 0 40%;
   flex: 0 0 40%;
@@ -566,7 +600,7 @@ select {
   margin-top: 40px;
 }
 
-/* line 389, ../CV/sass/style.sass */
+/* line 416, ../CV/sass/style.sass */
 .about .about-content .skills h3 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -574,7 +608,7 @@ select {
   color: #302e4d;
 }
 
-/* line 394, ../CV/sass/style.sass */
+/* line 421, ../CV/sass/style.sass */
 .about .about-content .skills p {
   font-size: 16px;
   line-height: 25px;
@@ -582,7 +616,7 @@ select {
   margin: 0;
 }
 
-/* line 399, ../CV/sass/style.sass */
+/* line 426, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -590,7 +624,7 @@ select {
   margin-bottom: 30px;
 }
 
-/* line 405, ../CV/sass/style.sass */
+/* line 432, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item h5 {
   line-height: 40px;
   font-weight: 600;
@@ -600,7 +634,7 @@ select {
   margin: 0;
 }
 
-/* line 412, ../CV/sass/style.sass */
+/* line 439, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .progress {
   background-color: #e3e3e3;
   height: 7px;
@@ -609,7 +643,7 @@ select {
   position: relative;
 }
 
-/* line 418, ../CV/sass/style.sass */
+/* line 445, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .progress .progress-in {
   position: absolute;
   left: 0;
@@ -618,7 +652,7 @@ select {
   border-radius: 4px;
 }
 
-/* line 425, ../CV/sass/style.sass */
+/* line 452, ../CV/sass/style.sass */
 .about .about-content .skills .skill-item .skill-percent {
   line-height: 40px;
   position: absolute;
@@ -628,12 +662,12 @@ select {
   color: #302e43;
 }
 
-/* line 435, ../CV/sass/style.sass */
+/* line 462, ../CV/sass/style.sass */
 .portfolio .container {
   padding-bottom: 40px;
 }
 
-/* line 437, ../CV/sass/style.sass */
+/* line 464, ../CV/sass/style.sass */
 .portfolio .portfolio-item-inner {
   border: 6px solid #fdf9ff;
   border-radius: 10px;
@@ -642,32 +676,32 @@ select {
   position: relative;
 }
 
-/* line 443, ../CV/sass/style.sass */
+/* line 470, ../CV/sass/style.sass */
 .portfolio .portfolio-item-inner:hover .portfolio-info .icon {
   opacity: 1;
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
 }
 
-/* line 447, ../CV/sass/style.sass */
+/* line 474, ../CV/sass/style.sass */
 .portfolio .portfolio-item-inner:hover .portfolio-info h4 {
   opacity: 1;
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
 }
 
-/* line 451, ../CV/sass/style.sass */
+/* line 478, ../CV/sass/style.sass */
 .portfolio .portfolio-item-inner:hover .portfolio-info {
   opacity: 1;
 }
 
-/* line 453, ../CV/sass/style.sass */
+/* line 480, ../CV/sass/style.sass */
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
 }
 
-/* line 456, ../CV/sass/style.sass */
+/* line 483, ../CV/sass/style.sass */
 .portfolio .portfolio-filter {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -676,7 +710,7 @@ select {
   margin-bottom: 40px;
 }
 
-/* line 463, ../CV/sass/style.sass */
+/* line 490, ../CV/sass/style.sass */
 .portfolio .portfolio-filter button {
   border: none;
   background-color: transparent;
@@ -693,25 +727,25 @@ select {
   transition: all 0.3s ease;
 }
 
-/* line 477, ../CV/sass/style.sass */
+/* line 504, ../CV/sass/style.sass */
 .portfolio .portfolio-item {
   margin-bottom: 30px;
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
 
-/* line 481, ../CV/sass/style.sass */
+/* line 508, ../CV/sass/style.sass */
 .portfolio .portfolio-item.hide {
   display: none;
 }
 
-/* line 483, ../CV/sass/style.sass */
+/* line 510, ../CV/sass/style.sass */
 .portfolio .portfolio-item.show {
   display: block;
   animation: showItem 0.5s ease;
 }
 
-/* line 486, ../CV/sass/style.sass */
+/* line 513, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info {
   position: absolute;
   left: 0;
@@ -726,7 +760,7 @@ select {
   opacity: 0;
 }
 
-/* line 498, ../CV/sass/style.sass */
+/* line 525, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   font-weight: 700;
@@ -739,7 +773,7 @@ select {
   opacity: 0;
 }
 
-/* line 508, ../CV/sass/style.sass */
+/* line 535, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info .icon {
   width: 40px;
   height: 40px;
@@ -756,12 +790,12 @@ select {
   opacity: 0;
 }
 
-/* line 522, ../CV/sass/style.sass */
+/* line 549, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info .icon .fa {
   line-height: 40px;
 }
 
-/* line 527, ../CV/sass/style.sass */
+/* line 554, ../CV/sass/style.sass */
 .lightbox {
   position: fixed;
   left: 0;
@@ -777,17 +811,17 @@ select {
   padding: 30px;
 }
 
-/* line 540, ../CV/sass/style.sass */
+/* line 567, ../CV/sass/style.sass */
 .lightbox.open {
   display: flex;
 }
 
-/* line 542, ../CV/sass/style.sass */
+/* line 569, ../CV/sass/style.sass */
 .lightbox.open .lightbox-content {
   animation: lightboxImage .5s ease;
 }
 
-/* line 546, ../CV/sass/style.sass */
+/* line 573, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item {
   position: absolute;
   height: 40px;
@@ -803,18 +837,18 @@ select {
   left: 30px;
 }
 
-/* line 559, ../CV/sass/style.sass */
+/* line 586, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item:hover {
   transform: scale(1.2);
 }
 
-/* line 561, ../CV/sass/style.sass */
+/* line 588, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 564, ../CV/sass/style.sass */
+/* line 591, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item {
   position: absolute;
   height: 40px;
@@ -830,23 +864,23 @@ select {
   right: 30px;
 }
 
-/* line 577, ../CV/sass/style.sass */
+/* line 604, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item:hover {
   transform: scale(1.2);
 }
 
-/* line 579, ../CV/sass/style.sass */
+/* line 606, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 583, ../CV/sass/style.sass */
+/* line 610, ../CV/sass/style.sass */
 .lightbox .lightbox-content {
   position: relative;
 }
 
-/* line 586, ../CV/sass/style.sass */
+/* line 613, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-close {
   position: absolute;
   height: 40;
@@ -859,7 +893,7 @@ select {
   line-height: 40px;
 }
 
-/* line 596, ../CV/sass/style.sass */
+/* line 623, ../CV/sass/style.sass */
 .lightbox .lightbox-content img {
   height: auto;
   width: auto;
@@ -870,7 +904,7 @@ select {
   padding: 40px 0 30px;
 }
 
-/* line 604, ../CV/sass/style.sass */
+/* line 631, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-caption {
   position: absolute;
   bottom: 0;
@@ -904,41 +938,41 @@ select {
   }
 }
 
-/* line 631, ../CV/sass/style.sass */
+/* line 658, ../CV/sass/style.sass */
 .contact .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 634, ../CV/sass/style.sass */
+/* line 661, ../CV/sass/style.sass */
 .contact .contact-form .btn {
   height: 50px;
   padding: 0 50px;
 }
 
-/* line 637, ../CV/sass/style.sass */
+/* line 664, ../CV/sass/style.sass */
 .contact .contact-form .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-/* line 641, ../CV/sass/style.sass */
+/* line 668, ../CV/sass/style.sass */
 .contact .contact-form .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 645, ../CV/sass/style.sass */
+/* line 672, ../CV/sass/style.sass */
 .contact .contact-form .form-item {
   margin-bottom: 30px;
 }
 
-/* line 647, ../CV/sass/style.sass */
+/* line 674, ../CV/sass/style.sass */
 .contact .contact-form .form-item textarea.form-control {
   height: 140px;
 }
 
-/* line 649, ../CV/sass/style.sass */
+/* line 676, ../CV/sass/style.sass */
 .contact .contact-form .form-item .form-control {
   width: 100%;
   height: 50px;
@@ -950,12 +984,12 @@ select {
   transition: all 0.3s ease;
 }
 
-/* line 658, ../CV/sass/style.sass */
+/* line 685, ../CV/sass/style.sass */
 .contact .contact-form .form-item .form-control:focus {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-/* line 660, ../CV/sass/style.sass */
+/* line 687, ../CV/sass/style.sass */
 .contact .contact-info-item {
   flex: 0 50%;
   max-width: 50%;
@@ -963,17 +997,17 @@ select {
   margin-bottom: 40px;
 }
 
-/* line 665, ../CV/sass/style.sass */
+/* line 692, ../CV/sass/style.sass */
 .contact .contact-info-item .icon {
   display: inline-block;
 }
 
-/* line 667, ../CV/sass/style.sass */
+/* line 694, ../CV/sass/style.sass */
 .contact .contact-info-item .icon .fa {
   font-size: 40px;
 }
 
-/* line 669, ../CV/sass/style.sass */
+/* line 696, ../CV/sass/style.sass */
 .contact .contact-info-item h4 {
   font-size: 18px;
   font-weight: 700;
@@ -982,7 +1016,7 @@ select {
   margin: 15px 0 5px;
 }
 
-/* line 676, ../CV/sass/style.sass */
+/* line 703, ../CV/sass/style.sass */
 .contact .contact-info-item p {
   font-size: 16px;
   line-height: 25px;
@@ -991,12 +1025,12 @@ select {
   font-weight: 400;
 }
 
-/* line 684, ../CV/sass/style.sass */
+/* line 711, ../CV/sass/style.sass */
 body.dark .section {
   background-color: #151515;
 }
 
-/* line 686, ../CV/sass/style.sass */
+/* line 713, ../CV/sass/style.sass */
 body.dark .aside .copyright-text,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .about .about-content .timeline,
@@ -1004,7 +1038,7 @@ body.dark .aside {
   background-color: #222222;
 }
 
-/* line 692, ../CV/sass/style.sass */
+/* line 719, ../CV/sass/style.sass */
 body.dark .contact .contact-info-item h4,
 body.dark .portfolio .portfolio-filter button,
 body.dark .about .about-content .timeline .timeline-title,
@@ -1020,7 +1054,7 @@ body.dark .aside .nav li a {
   border-color: #393939;
 }
 
-/* line 706, ../CV/sass/style.sass */
+/* line 733, ../CV/sass/style.sass */
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .contact .contact-info-item p,
 body.dark .portfolio .portfolio-item-inner,
@@ -1034,32 +1068,36 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 1199px) {
-  /* line 719, ../CV/sass/style.sass */
+  /* line 746, ../CV/sass/style.sass */
+  .section .container {
+    padding-top: 70px;
+  }
+  /* line 748, ../CV/sass/style.sass */
   .aside .nav-toggler {
     display: flex;
     left: 30px;
   }
-  /* line 722, ../CV/sass/style.sass */
+  /* line 751, ../CV/sass/style.sass */
   .aside .nav-toggler.open {
     left: 300px;
   }
-  /* line 724, ../CV/sass/style.sass */
+  /* line 753, ../CV/sass/style.sass */
   .aside {
     left: -270px;
   }
-  /* line 726, ../CV/sass/style.sass */
+  /* line 755, ../CV/sass/style.sass */
   .aside.open {
     left: 0px;
   }
-  /* line 728, ../CV/sass/style.sass */
+  /* line 757, ../CV/sass/style.sass */
   .section {
     left: 0;
   }
-  /* line 730, ../CV/sass/style.sass */
+  /* line 759, ../CV/sass/style.sass */
   .section.open {
     left: 270px;
   }
-  /* line 733, ../CV/sass/style.sass */
+  /* line 762, ../CV/sass/style.sass */
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;
@@ -1067,7 +1105,7 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 991px) {
-  /* line 737, ../CV/sass/style.sass */
+  /* line 766, ../CV/sass/style.sass */
   .portfolio .portfolio-item {
     flex: 0 0 50%;
     max-width: 50%;
@@ -1075,7 +1113,7 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 767px) {
-  /* line 741, ../CV/sass/style.sass */
+  /* line 770, ../CV/sass/style.sass */
   .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
@@ -1083,14 +1121,14 @@ body.dark .home .intro p {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  /* line 747, ../CV/sass/style.sass */
+  /* line 776, ../CV/sass/style.sass */
   .portfolio .portfolio-filter button {
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 575px) {
-  /* line 750, ../CV/sass/style.sass */
+  /* line 779, ../CV/sass/style.sass */
   .contact .contact-info-item,
   .portfolio .portfolio-item {
     flex: 0 0 100%;
