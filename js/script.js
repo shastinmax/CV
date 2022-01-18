@@ -1,4 +1,10 @@
 
+window.addEventListener('load',function(){
+    document.querySelector('.preloader').classList.add('opacity-0')
+    setTimeout(function() {
+        document.querySelector('.preloader').style.display='none'
+    }, 1000);
+})
 
 // portfolio item filter
 const filterContainer = document.querySelector('.portfolio-filter'),
@@ -124,7 +130,7 @@ function asideSectiontogglerBtn() {
         allSection[i].classList.toggle('open')
     }
 }
-//40.12
+//45.50
 
 
 
