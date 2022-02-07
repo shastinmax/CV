@@ -704,11 +704,13 @@ select {
 
 /* line 484, ../CV/sass/style.sass */
 .portfolio .portfolio-item-inner .portfolio-img img {
+  min-height: 300px;
+  object-fit: cover;
   width: 100%;
   display: block;
 }
 
-/* line 487, ../CV/sass/style.sass */
+/* line 489, ../CV/sass/style.sass */
 .portfolio .portfolio-filter {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -717,7 +719,7 @@ select {
   margin-bottom: 40px;
 }
 
-/* line 494, ../CV/sass/style.sass */
+/* line 496, ../CV/sass/style.sass */
 .portfolio .portfolio-filter button {
   border: none;
   background-color: transparent;
@@ -734,25 +736,45 @@ select {
   transition: all 0.3s ease;
 }
 
-/* line 508, ../CV/sass/style.sass */
+/* line 510, ../CV/sass/style.sass */
 .portfolio .portfolio-item {
   margin-bottom: 30px;
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
 
-/* line 512, ../CV/sass/style.sass */
+/* line 514, ../CV/sass/style.sass */
+.portfolio .portfolio-item a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0 10px;
+  color: #302e43;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 527, ../CV/sass/style.sass */
+.portfolio .portfolio-item a:hover {
+  color: #ec1839;
+}
+
+/* line 529, ../CV/sass/style.sass */
 .portfolio .portfolio-item.hide {
   display: none;
 }
 
-/* line 514, ../CV/sass/style.sass */
+/* line 531, ../CV/sass/style.sass */
 .portfolio .portfolio-item.show {
   display: block;
   animation: showItem 0.5s ease;
 }
 
-/* line 517, ../CV/sass/style.sass */
+/* line 534, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info {
   position: absolute;
   left: 0;
@@ -767,7 +789,7 @@ select {
   opacity: 0;
 }
 
-/* line 529, ../CV/sass/style.sass */
+/* line 546, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   font-weight: 700;
@@ -780,7 +802,7 @@ select {
   opacity: 0;
 }
 
-/* line 539, ../CV/sass/style.sass */
+/* line 556, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info .icon {
   width: 40px;
   height: 40px;
@@ -797,12 +819,19 @@ select {
   opacity: 0;
 }
 
-/* line 553, ../CV/sass/style.sass */
+/* line 570, ../CV/sass/style.sass */
 .portfolio .portfolio-item .portfolio-info .icon .fa {
   line-height: 40px;
 }
 
-/* line 558, ../CV/sass/style.sass */
+/* line 572, ../CV/sass/style.sass */
+.portfolio .portfolio-item .portfolio-info button {
+  width: 50px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* line 579, ../CV/sass/style.sass */
 .lightbox {
   position: fixed;
   left: 0;
@@ -818,17 +847,17 @@ select {
   padding: 30px;
 }
 
-/* line 571, ../CV/sass/style.sass */
+/* line 592, ../CV/sass/style.sass */
 .lightbox.open {
   display: flex;
 }
 
-/* line 573, ../CV/sass/style.sass */
+/* line 594, ../CV/sass/style.sass */
 .lightbox.open .lightbox-content {
   animation: lightboxImage .5s ease;
 }
 
-/* line 577, ../CV/sass/style.sass */
+/* line 598, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item {
   position: absolute;
   height: 40px;
@@ -844,18 +873,18 @@ select {
   left: 30px;
 }
 
-/* line 590, ../CV/sass/style.sass */
+/* line 611, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item:hover {
   transform: scale(1.2);
 }
 
-/* line 592, ../CV/sass/style.sass */
+/* line 613, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .prev-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 595, ../CV/sass/style.sass */
+/* line 616, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item {
   position: absolute;
   height: 40px;
@@ -871,27 +900,27 @@ select {
   right: 30px;
 }
 
-/* line 608, ../CV/sass/style.sass */
+/* line 629, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item:hover {
   transform: scale(1.2);
 }
 
-/* line 610, ../CV/sass/style.sass */
+/* line 631, ../CV/sass/style.sass */
 .lightbox .lightbox-controls .next-item .fa {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 614, ../CV/sass/style.sass */
+/* line 635, ../CV/sass/style.sass */
 .lightbox .lightbox-content {
   position: relative;
 }
 
-/* line 617, ../CV/sass/style.sass */
+/* line 638, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-close {
   position: absolute;
-  height: 40;
-  width: 40;
+  height: 40px;
+  width: 40px;
   top: 0;
   right: 0;
   font-size: 16px;
@@ -900,7 +929,7 @@ select {
   line-height: 40px;
 }
 
-/* line 627, ../CV/sass/style.sass */
+/* line 648, ../CV/sass/style.sass */
 .lightbox .lightbox-content img {
   height: auto;
   width: auto;
@@ -911,7 +940,7 @@ select {
   padding: 40px 0 30px;
 }
 
-/* line 635, ../CV/sass/style.sass */
+/* line 656, ../CV/sass/style.sass */
 .lightbox .lightbox-content .lightbox-caption {
   position: absolute;
   bottom: 0;
@@ -945,41 +974,41 @@ select {
   }
 }
 
-/* line 662, ../CV/sass/style.sass */
+/* line 683, ../CV/sass/style.sass */
 .contact .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 665, ../CV/sass/style.sass */
+/* line 686, ../CV/sass/style.sass */
 .contact .contact-form .btn {
   height: 50px;
   padding: 0 50px;
 }
 
-/* line 668, ../CV/sass/style.sass */
+/* line 689, ../CV/sass/style.sass */
 .contact .contact-form .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-/* line 672, ../CV/sass/style.sass */
+/* line 693, ../CV/sass/style.sass */
 .contact .contact-form .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-/* line 676, ../CV/sass/style.sass */
+/* line 697, ../CV/sass/style.sass */
 .contact .contact-form .form-item {
   margin-bottom: 30px;
 }
 
-/* line 678, ../CV/sass/style.sass */
+/* line 699, ../CV/sass/style.sass */
 .contact .contact-form .form-item textarea.form-control {
   height: 140px;
 }
 
-/* line 680, ../CV/sass/style.sass */
+/* line 701, ../CV/sass/style.sass */
 .contact .contact-form .form-item .form-control {
   width: 100%;
   height: 50px;
@@ -991,12 +1020,12 @@ select {
   transition: all 0.3s ease;
 }
 
-/* line 689, ../CV/sass/style.sass */
+/* line 710, ../CV/sass/style.sass */
 .contact .contact-form .form-item .form-control:focus {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-/* line 691, ../CV/sass/style.sass */
+/* line 712, ../CV/sass/style.sass */
 .contact .contact-info-item {
   flex: 0 50%;
   max-width: 50%;
@@ -1004,17 +1033,17 @@ select {
   margin-bottom: 40px;
 }
 
-/* line 696, ../CV/sass/style.sass */
+/* line 717, ../CV/sass/style.sass */
 .contact .contact-info-item .icon {
   display: inline-block;
 }
 
-/* line 698, ../CV/sass/style.sass */
+/* line 719, ../CV/sass/style.sass */
 .contact .contact-info-item .icon .fa {
   font-size: 40px;
 }
 
-/* line 700, ../CV/sass/style.sass */
+/* line 721, ../CV/sass/style.sass */
 .contact .contact-info-item h4 {
   font-size: 18px;
   font-weight: 700;
@@ -1023,7 +1052,7 @@ select {
   margin: 15px 0 5px;
 }
 
-/* line 707, ../CV/sass/style.sass */
+/* line 728, ../CV/sass/style.sass */
 .contact .contact-info-item p {
   font-size: 16px;
   line-height: 25px;
@@ -1032,12 +1061,12 @@ select {
   font-weight: 400;
 }
 
-/* line 715, ../CV/sass/style.sass */
+/* line 736, ../CV/sass/style.sass */
 body.dark .section {
   background-color: #151515;
 }
 
-/* line 717, ../CV/sass/style.sass */
+/* line 738, ../CV/sass/style.sass */
 body.dark .aside .copyright-text,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .about .about-content .timeline,
@@ -1045,9 +1074,10 @@ body.dark .aside {
   background-color: #222222;
 }
 
-/* line 723, ../CV/sass/style.sass */
+/* line 744, ../CV/sass/style.sass */
 body.dark .contact .contact-info-item h4,
 body.dark .portfolio .portfolio-filter button,
+body.dark .portfolio .portfolio-item a,
 body.dark .about .about-content .timeline .timeline-title,
 body.dark .about .about-content h3.title,
 body.dark .about .about-content .skills .skill-item h5,
@@ -1061,7 +1091,7 @@ body.dark .aside .nav li a {
   border-color: #393939;
 }
 
-/* line 737, ../CV/sass/style.sass */
+/* line 759, ../CV/sass/style.sass */
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .contact .contact-info-item p,
 body.dark .portfolio .portfolio-item-inner,
@@ -1075,36 +1105,36 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 1199px) {
-  /* line 750, ../CV/sass/style.sass */
+  /* line 772, ../CV/sass/style.sass */
   .section .container {
     padding-top: 70px;
   }
-  /* line 752, ../CV/sass/style.sass */
+  /* line 774, ../CV/sass/style.sass */
   .aside .nav-toggler {
     display: flex;
     left: 30px;
   }
-  /* line 755, ../CV/sass/style.sass */
+  /* line 777, ../CV/sass/style.sass */
   .aside .nav-toggler.open {
     left: 300px;
   }
-  /* line 757, ../CV/sass/style.sass */
+  /* line 779, ../CV/sass/style.sass */
   .aside {
     left: -270px;
   }
-  /* line 759, ../CV/sass/style.sass */
+  /* line 781, ../CV/sass/style.sass */
   .aside.open {
     left: 0px;
   }
-  /* line 761, ../CV/sass/style.sass */
+  /* line 783, ../CV/sass/style.sass */
   .section {
     left: 0;
   }
-  /* line 763, ../CV/sass/style.sass */
+  /* line 785, ../CV/sass/style.sass */
   .section.open {
     left: 270px;
   }
-  /* line 766, ../CV/sass/style.sass */
+  /* line 788, ../CV/sass/style.sass */
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;
@@ -1112,7 +1142,7 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 991px) {
-  /* line 770, ../CV/sass/style.sass */
+  /* line 792, ../CV/sass/style.sass */
   .portfolio .portfolio-item {
     flex: 0 0 50%;
     max-width: 50%;
@@ -1120,7 +1150,7 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 767px) {
-  /* line 774, ../CV/sass/style.sass */
+  /* line 796, ../CV/sass/style.sass */
   .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
@@ -1128,14 +1158,14 @@ body.dark .home .intro p {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  /* line 780, ../CV/sass/style.sass */
+  /* line 802, ../CV/sass/style.sass */
   .portfolio .portfolio-filter button {
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 575px) {
-  /* line 783, ../CV/sass/style.sass */
+  /* line 805, ../CV/sass/style.sass */
   .contact .contact-info-item,
   .portfolio .portfolio-item {
     flex: 0 0 100%;

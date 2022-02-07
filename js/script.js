@@ -157,15 +157,3 @@ function asideSectiontogglerBtn() {
         allSection[i].classList.toggle('open')
     }
 }
-//45.50
-
-
-
-// const arr = [2, 3, 1, 3, 2, 5, 6, 7, 7]
-// arr.reduce((acc, num) => {
-//     const keys = Object.keys(acc)
-//     if (keys.find(num)) {
-//         acc[num] += 1
-//     } else { acc[num] = 1 }
-//     return acc
-// }, {})
