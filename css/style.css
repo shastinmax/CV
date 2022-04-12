@@ -1062,12 +1062,21 @@ select {
   font-weight: 400;
 }
 
-/* line 737, ../CV/sass/style.sass */
+/* line 735, ../CV/sass/style.sass */
+.contact .contact-info-item a {
+  font-size: 16px;
+  line-height: 25px;
+  color: #504e70;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* line 743, ../CV/sass/style.sass */
 body.dark .section {
   background-color: #151515;
 }
 
-/* line 739, ../CV/sass/style.sass */
+/* line 745, ../CV/sass/style.sass */
 body.dark .aside .copyright-text,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .about .about-content .timeline,
@@ -1075,7 +1084,7 @@ body.dark .aside {
   background-color: #222222;
 }
 
-/* line 745, ../CV/sass/style.sass */
+/* line 751, ../CV/sass/style.sass */
 body.dark .contact .contact-info-item h4,
 body.dark .portfolio .portfolio-filter button,
 body.dark .portfolio .portfolio-item a,
@@ -1092,9 +1101,10 @@ body.dark .aside .nav li a {
   border-color: #393939;
 }
 
-/* line 760, ../CV/sass/style.sass */
+/* line 766, ../CV/sass/style.sass */
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .contact .contact-info-item p,
+body.dark .contact .contact-info-item a,
 body.dark .portfolio .portfolio-item-inner,
 body.dark .about .about-content .timeline .timeline-text,
 body.dark .about .about-content .timeline .timeline-date,
@@ -1106,36 +1116,36 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 1199px) {
-  /* line 773, ../CV/sass/style.sass */
+  /* line 780, ../CV/sass/style.sass */
   .section .container {
     padding-top: 70px;
   }
-  /* line 775, ../CV/sass/style.sass */
+  /* line 782, ../CV/sass/style.sass */
   .aside .nav-toggler {
     display: flex;
     left: 30px;
   }
-  /* line 778, ../CV/sass/style.sass */
+  /* line 785, ../CV/sass/style.sass */
   .aside .nav-toggler.open {
     left: 300px;
   }
-  /* line 780, ../CV/sass/style.sass */
+  /* line 787, ../CV/sass/style.sass */
   .aside {
     left: -270px;
   }
-  /* line 782, ../CV/sass/style.sass */
+  /* line 789, ../CV/sass/style.sass */
   .aside.open {
     left: 0px;
   }
-  /* line 784, ../CV/sass/style.sass */
+  /* line 791, ../CV/sass/style.sass */
   .section {
     left: 0;
   }
-  /* line 786, ../CV/sass/style.sass */
+  /* line 793, ../CV/sass/style.sass */
   .section.open {
     left: 270px;
   }
-  /* line 789, ../CV/sass/style.sass */
+  /* line 796, ../CV/sass/style.sass */
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;
@@ -1143,7 +1153,7 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 991px) {
-  /* line 793, ../CV/sass/style.sass */
+  /* line 800, ../CV/sass/style.sass */
   .portfolio .portfolio-item {
     flex: 0 0 50%;
     max-width: 50%;
@@ -1151,7 +1161,7 @@ body.dark .home .intro p {
 }
 
 @media (max-width: 767px) {
-  /* line 797, ../CV/sass/style.sass */
+  /* line 804, ../CV/sass/style.sass */
   .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
@@ -1159,14 +1169,14 @@ body.dark .home .intro p {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  /* line 803, ../CV/sass/style.sass */
+  /* line 810, ../CV/sass/style.sass */
   .portfolio .portfolio-filter button {
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 575px) {
-  /* line 806, ../CV/sass/style.sass */
+  /* line 813, ../CV/sass/style.sass */
   .contact .contact-info-item,
   .portfolio .portfolio-item {
     flex: 0 0 100%;
